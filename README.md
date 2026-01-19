@@ -28,7 +28,7 @@ You have to explicitly bind the goal to the `post-site` phase:
         <plugin>
             <groupId>org.myjtools</groupId>
             <artifactId>docsite-maven-plugin</artifactId>
-            <version>1.0.0-alpha1</version>
+            <version>1.0.1</version>
             <executions>
                 <execution>
                     <phase>post-site</phase>
@@ -60,7 +60,7 @@ The site will be generated in `target/site` by default.
 <plugin>
     <groupId>org.myjtools</groupId>
     <artifactId>docsite-maven-plugin</artifactId>
-    <version>1.0.0-alpha1</version>
+    <version>1.0.1</version>
     <executions>
         <execution>
             <phase>post-site</phase>
@@ -171,7 +171,7 @@ A complete example configuration:
         <plugin>
             <groupId>org.myjtools</groupId>
             <artifactId>docsite-maven-plugin</artifactId>
-            <version>1.0.0-alpha1</version>
+            <version>1.0.1</version>
             <executions>
                 <execution>
                     <phase>post-site</phase>
