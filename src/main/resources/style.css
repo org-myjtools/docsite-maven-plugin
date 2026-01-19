@@ -1,4 +1,4 @@
-    :root {
+:root {
             --bg-color: #ffffff;
             --text-color: #1f2937;
             --muted-text: #6b7280;
@@ -127,6 +127,30 @@
             padding: 2rem 3rem;
             max-width: var(--max-content-width);
             margin: 0 auto;
+        }
+
+        /* Tables */
+        main table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5em;
+            font-size: 0.95rem;
+        }
+
+        main th,
+        main td {
+            text-align: left;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+        }
+
+        main th {
+            background-color: var(--code-bg);
+            font-weight: 600;
+        }
+
+        main tr:nth-child(even) {
+            background-color: rgba(0,0,0,0.02);
         }
 
         /* Table of Contents (Right) */
@@ -357,4 +381,14 @@
             main {
                 padding: 1rem;
             }
+        }
+
+        .site-footer {
+            text-align: right;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            border-top: 1px solid var(--border-color);
+            margin-top: auto; /* Ensure it stays at bottom if content is short, though flex-grow on layout-container handles this too */
+            background-color: var(--bg-color);
         }
