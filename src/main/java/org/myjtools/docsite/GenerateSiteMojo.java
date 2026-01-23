@@ -176,7 +176,7 @@ public class GenerateSiteMojo extends AbstractMojo {
         String content  = Files.readString(siteDir.resolve("project-reports.html"));
 
         List<MavenReport> reports = new ArrayList<>();
-        Pattern reportPattern = Pattern.compile("<li class=\"none\"><a href=\"(.*)\" title=\"(.*)\">");
+        Pattern reportPattern = Pattern.compile("<td><a href=\"(.*)\">(.*)</a></td>");
         Matcher matcher = reportPattern.matcher(content);
         while (matcher.find()) {
             getLog().info("Found report: " + matcher.group(2) + " -> " + matcher.group(1));
